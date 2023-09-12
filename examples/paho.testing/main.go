@@ -11,9 +11,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/listeners"
-	"github.com/dayu-smart/mqttsrv/packets"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/listeners"
+	"github.com/aimore-group/mqttsrv/packets"
 )
 
 func main() {

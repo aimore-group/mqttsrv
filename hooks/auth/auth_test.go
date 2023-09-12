@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/packets"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/packets"
 	"github.com/stretchr/testify/require"
 )
 

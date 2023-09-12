@@ -11,10 +11,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/dayu-smart/mqttsrv/hooks/auth"
+	"github.com/aimore-group/mqttsrv/hooks/auth"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/packets"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/packets"
 )
 
 func main() {

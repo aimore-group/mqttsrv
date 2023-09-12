@@ -9,7 +9,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/dayu-smart/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/packets"
 )
 
 var (

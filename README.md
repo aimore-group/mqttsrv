@@ -2,11 +2,11 @@
 
 <p align="center">
     
-![build status](https://github.com/dayu-smart/mqttsrv/actions/workflows/build.yml/badge.svg) 
-[![Coverage Status](https://coveralls.io/repos/github/dayu-smart/mqttsrv/badge.svg?branch=main)](https://coveralls.io/github/dayu-smart/mqttsrv?branch=main)
-[![Go Report Card](https://goreportcard.com/badge/github.com/dayu-smart/mqttsrv)](https://goreportcard.com/report/github.com/dayu-smart/mqttsrv)
-[![Go Reference](https://pkg.go.dev/badge/github.com/dayu-smart/mqttsrv.svg)](https://pkg.go.dev/github.com/dayu-smart/mqttsrv)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dayu-smart/mqttsrv/issues)
+![build status](https://github.com/aimore-group/mqttsrv/actions/workflows/build.yml/badge.svg) 
+[![Coverage Status](https://coveralls.io/repos/github/aimore-group/mqttsrv/badge.svg?branch=main)](https://coveralls.io/github/aimore-group/mqttsrv?branch=main)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aimore-group/mqttsrv)](https://goreportcard.com/report/github.com/aimore-group/mqttsrv)
+[![Go Reference](https://pkg.go.dev/badge/github.com/aimore-group/mqttsrv.svg)](https://pkg.go.dev/github.com/aimore-group/mqttsrv)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/aimore-group/mqttsrv/issues)
 
 </p>
 
@@ -52,7 +52,7 @@ Support for MQTT v3.0.0 and v3.1.1 is considered hybrid-compatibility. Where not
 Unless it's a critical issue, new releases typically go out over the weekend. 
 
 ## Roadmap
-- Please [open an issue](https://github.com/dayu-smart/mqttsrv/issues) to request new features or event hooks!
+- Please [open an issue](https://github.com/aimore-group/mqttsrv/issues) to request new features or event hooks!
 - Cluster support.
 - Enhanced Metrics support.
 - File-based server configuration (supporting docker).
@@ -81,9 +81,9 @@ Importing MQTT as a package requires just a few lines of code to get started.
 import (
   "log"
 
-  "github.com/dayu-smart/mqttsrv"
-  "github.com/dayu-smart/mqttsrv/hooks/auth"
-  "github.com/dayu-smart/mqttsrv/listeners"
+  "github.com/aimore-group/mqttsrv"
+  "github.com/aimore-group/mqttsrv/hooks/auth"
+  "github.com/aimore-group/mqttsrv/listeners"
 )
 
 func main() {
@@ -179,7 +179,7 @@ Hooks are stackable - you can add multiple hooks to a server, and they will be r
 | Persistence    | [server/hooks/storage/redis](hooks/storage/redis/redis.go)    | Persistent storage using [Redis](https://redis.io).                        | 
 | Debugging      | [server/hooks/debug](hooks/debug/debug.go)                    | Additional debugging output to visualise packet flow.                      | 
 
-Many of the internal server functions are now exposed to developers, so you can make your own Hooks by using the above as examples. If you do, please [Open an issue](https://github.com/dayu-smart/mqttsrv/issues) and let everyone know!
+Many of the internal server functions are now exposed to developers, so you can make your own Hooks by using the above as examples. If you do, please [Open an issue](https://github.com/aimore-group/mqttsrv/issues) and let everyone know!
 
 ### Access Control 
 #### Allow Hook
@@ -441,7 +441,7 @@ Million Message Challenge (hit the server with 1 million messages immediately):
 > Not sure what's going on with EMQX here, perhaps the docker out-of-the-box settings are not optimal, so take it with a pinch of salt as we know for a fact it's a solid piece of software.
 
 ## Contribution Guidelines
-Contributions and feedback are both welcomed and encouraged! [Open an issue](https://github.com/dayu-smart/mqttsrv/issues) to report a bug, ask a question, or make a feature request. If you open a pull request, please try to follow the following guidelines:
+Contributions and feedback are both welcomed and encouraged! [Open an issue](https://github.com/aimore-group/mqttsrv/issues) to report a bug, ask a question, or make a feature request. If you open a pull request, please try to follow the following guidelines:
 - Try to maintain test coverage where reasonably possible.
 - Clearly state what the PR does and why.
 - Please remember to add your SPDX FileContributor tag to files where you have made a meaningful contribution.

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/dayu-smart/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/packets"
 	"github.com/stretchr/testify/require"
 )
 

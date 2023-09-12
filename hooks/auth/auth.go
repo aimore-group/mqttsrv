@@ -7,8 +7,8 @@ package auth
 import (
 	"bytes"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/packets"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/packets"
 )
 
 // Options contains the configuration/rules data for the auth ledger.

@@ -11,9 +11,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/hooks/auth"
-	"github.com/dayu-smart/mqttsrv/listeners"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/hooks/auth"
+	"github.com/aimore-group/mqttsrv/listeners"
 )
 
 var (

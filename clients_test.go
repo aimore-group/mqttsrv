@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dayu-smart/mqttsrv/packets"
-	"github.com/dayu-smart/mqttsrv/system"
+	"github.com/aimore-group/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/system"
 
 	"github.com/stretchr/testify/require"
 )

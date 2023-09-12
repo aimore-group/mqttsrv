@@ -8,8 +8,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/dayu-smart/mqttsrv/packets"
-	"github.com/dayu-smart/mqttsrv/system"
+	"github.com/aimore-group/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/system"
 )
 
 const (

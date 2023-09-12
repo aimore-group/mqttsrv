@@ -17,10 +17,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/dayu-smart/mqttsrv/hooks/storage"
-	"github.com/dayu-smart/mqttsrv/listeners"
-	"github.com/dayu-smart/mqttsrv/packets"
-	"github.com/dayu-smart/mqttsrv/system"
+	"github.com/aimore-group/mqttsrv/hooks/storage"
+	"github.com/aimore-group/mqttsrv/listeners"
+	"github.com/aimore-group/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/system"
 
 	"log/slog"
 )

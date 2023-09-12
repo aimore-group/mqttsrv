@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/hooks/storage"
-	"github.com/dayu-smart/mqttsrv/packets"
-	"github.com/dayu-smart/mqttsrv/system"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/hooks/storage"
+	"github.com/aimore-group/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/system"
 
 	"github.com/asdine/storm/v3"
 	"github.com/stretchr/testify/require"

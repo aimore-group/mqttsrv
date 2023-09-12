@@ -11,10 +11,10 @@ import (
 	"syscall"
 	"time"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/hooks/auth"
-	"github.com/dayu-smart/mqttsrv/hooks/storage/bolt"
-	"github.com/dayu-smart/mqttsrv/listeners"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/hooks/auth"
+	"github.com/aimore-group/mqttsrv/hooks/storage/bolt"
+	"github.com/aimore-group/mqttsrv/listeners"
 	"go.etcd.io/bbolt"
 )
 

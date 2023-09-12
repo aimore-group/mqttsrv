@@ -17,7 +17,7 @@ import (
 
 	"github.com/rs/xid"
 
-	"github.com/dayu-smart/mqttsrv/packets"
+	"github.com/aimore-group/mqttsrv/packets"
 )
 
 const (

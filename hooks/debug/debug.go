@@ -9,9 +9,9 @@ import (
 	"log/slog"
 	"strings"
 
-	mqtt "github.com/dayu-smart/mqttsrv"
-	"github.com/dayu-smart/mqttsrv/hooks/storage"
-	"github.com/dayu-smart/mqttsrv/packets"
+	mqtt "github.com/aimore-group/mqttsrv"
+	"github.com/aimore-group/mqttsrv/hooks/storage"
+	"github.com/aimore-group/mqttsrv/packets"
 )
 
 // Options contains configuration settings for the debug output.

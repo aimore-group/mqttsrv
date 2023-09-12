@@ -1,4 +1,4 @@
-module github.com/dayu-smart/mqttsrv
+module github.com/aimore-group/mqttsrv
 
 go 1.21.1
 
