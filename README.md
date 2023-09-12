@@ -70,8 +70,8 @@ go build -o mqttsrv && ./mqttsrv
 A simple Dockerfile is provided for running the [cmd/main.go](cmd/main.go) Websocket, TCP, and Stats server:
 
 ```sh
-docker build -t mqtt:latest .
-docker run -p 1883:1883 -p 1882:1882 -p 8080:8080 mqtt:latest
+docker build -t mqttsrv:latest .
+docker run -p 1883:1883 -p 1882:1882 -p 8080:8080 mqttsrv:latest
 ```
 
 ## Developing with MQTT
