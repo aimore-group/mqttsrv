@@ -63,7 +63,7 @@ MQTT can be used as a standalone broker. Simply checkout this repository and run
 
 ```
 cd cmd
-go build -o mqtt && ./mqtt
+go build -o mqttsrv && ./mqttsrv
 ```
 
 ### Using Docker
