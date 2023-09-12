@@ -3,7 +3,7 @@
 <p align="center">
     
 ![build status](https://github.com/dayu-smart/mqttsrv/actions/workflows/build.yml/badge.svg) 
-[![Coverage Status](https://coveralls.io/repos/github/dayu-smart/mqttsrv/badge.svg?branch=master&v2)](https://coveralls.io/github/dayu-smart/mqttsrv?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/dayu-smart/mqttsrv/badge.svg?branch=main)](https://coveralls.io/github/dayu-smart/mqttsrv?branch=main)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dayu-smart/mqttsrv)](https://goreportcard.com/report/github.com/dayu-smart/mqttsrv)
 [![Go Reference](https://pkg.go.dev/badge/github.com/dayu-smart/mqttsrv.svg)](https://pkg.go.dev/github.com/dayu-smart/mqttsrv)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dayu-smart/mqttsrv/issues)
