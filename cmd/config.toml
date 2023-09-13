@@ -1,0 +1,28 @@
+
+wsAddr = ":1885"
+tcpAddr = ":1883"
+statsAddr = ":8086"
+
+# tlsAddr = ":8883"
+# tlsCert = "server.crt"
+# tlsKey = "server.key"
+# tlsCa = "root.crt"
+
+[options]
+sysTopicResendInterval = 5
+clientNetWriteBufferSize = 1024
+clientNetReadBufferSize = 1024
+
+[options.Capabilities]
+maximumSessionExpiryInterval = 4294967295
+maximumMessageExpiryInterval = 86400   
+receiveMaximum = 1024
+maximumQos = 2
+retainAvailable = 1
+maximumPacketSize = 0
+topicAliasMaximum = 65535
+wildcardSubAvailable = 1
+subIDAvailable = 1
+sharedSubAvailable = 1
+minimumProtocolVersion = 3
+maximumClientWritesPending = 32

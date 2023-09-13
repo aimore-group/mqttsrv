@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: 2023 mochi-mqtt, mochi-co
 // SPDX-FileContributor: mochi-co
 
-package mqtt
+package mqttsrv
 
 import (
 	"sort"

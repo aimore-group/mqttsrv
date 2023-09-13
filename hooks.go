@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: 2022 mochi-mqtt, mochi-co
 // SPDX-FileContributor: mochi-co, thedevop, dgduncan
 
-package mqtt
+package mqttsrv
 
 import (
 	"errors"

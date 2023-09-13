@@ -9,6 +9,7 @@ require (
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/gorilla/websocket v1.5.0
 	github.com/jinzhu/copier v0.4.0
+	github.com/naoina/toml v0.1.1
 	github.com/rs/xid v1.5.0
 	github.com/stretchr/testify v1.8.4
 	github.com/timshannon/badgerhold v1.0.0
@@ -26,6 +27,8 @@ require (
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/golang/protobuf v1.3.2 // indirect
+	github.com/kylelemons/godebug v1.1.0 // indirect
+	github.com/naoina/go-stringutil v0.1.0 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/yuin/gopher-lua v1.1.0 // indirect
