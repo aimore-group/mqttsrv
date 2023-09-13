@@ -97,7 +97,7 @@ type Options struct {
 	// Logger specifies a custom configured implementation of zerolog to override
 	// the servers default logger configuration. If you wish to change the log level,
 	// of the default logger, you can do so by setting
-	// 	server := mqtt.New(nil)
+	// 	server := mqttsrv.New(nil)
 	// level := new(slog.LevelVar)
 	// server.Slog = slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{
 	// 	Level: level,
