@@ -97,7 +97,7 @@ func main() {
   }()
 
   // Create the new MQTT Server.
-  server := mqtt.New(nil)
+  server := mqttsrv.New(nil)
   
   // Allow all connections.
   _ = server.AddHook(new(auth.AllowHook), nil)
@@ -148,10 +148,10 @@ Examples of usage can be found in the [examples](examples) folder or [cmd/main.g
 A number of configurable options are available which can be used to alter the behaviour or restrict access to certain features in the server.
 
 ```go
-server := mqtt.New(&mqtt.Options{
-  Capabilities: mqtt.Capabilities{
+server := mqttsrv.New(&mqttsrv.Options{
+  Capabilities: mqttsrv.Capabilities{
     MaximumSessionExpiryInterval: 3600,
-    Compatibilities: mqtt.Compatibilities{
+    Compatibilities: mqttsrv.Compatibilities{
       ObscureNotAuthorized: true,
     },
   },
@@ -162,7 +162,7 @@ server := mqtt.New(&mqtt.Options{
 })
 ```
 
-Review the mqtt.Options, mqtt.Capabilities, and mqtt.Compatibilities structs for a comprehensive list of options. `ClientNetWriteBufferSize` and `ClientNetReadBufferSize` can be configured to adjust memory usage per client, based on your needs.
+Review the mqttsrv.Options, mqttsrv.Capabilities, and mqttsrv.Compatibilities structs for a comprehensive list of options. `ClientNetWriteBufferSize` and `ClientNetReadBufferSize` can be configured to adjust memory usage per client, based on your needs.
 
 
 ## Event Hooks 
@@ -186,7 +186,7 @@ Many of the internal server functions are now exposed to developers, so you can 
 By default, MQTT uses a DENY-ALL access control rule. To allow connections, this must overwritten using an Access Control hook. The simplest of these hooks is the `auth.AllowAll` hook, which provides ALLOW-ALL rules to all connections, subscriptions, and publishing. It's also the simplest hook to use:
 
 ```go
-server := mqtt.New(nil)
+server := mqttsrv.New(nil)
 _ = server.AddHook(new(auth.AllowHook), nil)
 ```
 
@@ -215,7 +215,7 @@ ACL rules have 3 optional criteria and an filter match:
 Rules are processed in index order (0,1,2,3), returning on the first matching rule. See [hooks/auth/ledger.go](hooks/auth/ledger.go) to review the structs.
 
 ```go
-server := mqtt.New(nil)
+server := mqttsrv.New(nil)
 err := server.AddHook(new(auth.Hook), &auth.Options{
     Ledger: &auth.Ledger{
     Auth: auth.AuthRules{ // Auth disallows all by default
@@ -286,7 +286,7 @@ There is also a BoltDB hook which has been deprecated in favour of Badger, but i
 
 ## Developing with Event Hooks
 Many hooks are available for interacting with the broker and client lifecycle. 
-The function signatures for all the hooks and `mqtt.Hook` interface can be found in [hooks.go](hooks.go).
+The function signatures for all the hooks and `mqttsrv.Hook` interface can be found in [hooks.go](hooks.go).
 
 > The most flexible event hooks are OnPacketRead, OnPacketEncode, and OnPacketSent - these hooks be used to control and modify all incoming and outgoing packets.
 
@@ -335,7 +335,7 @@ If you are building a persistent storage hook, see the existing persistent hooks
 ### Inline Client (v2.4.0+)
 It's now possible to subscribe and publish to topics directly from the embedding code, by using the `inline client` feature. The Inline Client is an embedded client which operates as part of the server, and can be enabled in the server options:
 ```go
-server := mqtt.New(&mqtt.Options{
+server := mqttsrv.New(&mqttsrv.Options{
   InlineClient: true,
 })
 ```
@@ -355,7 +355,7 @@ err := server.Publish("direct/publish", []byte("packet scheduled message"), fals
 To subscribe to a topic filter from within the embedding application, you can use the `server.Subscribe(filter string, subscriptionId int, handler InlineSubFn) error` method with a callback function. Note that only QoS 0 is supported for inline subscriptions. If you wish to have multiple callbacks for the same filter, you can use the MQTTv5 `subscriptionId` property to differentiate.
 
 ```go
-callbackFn := func(cl *mqtt.Client, sub packets.Subscription, pk packets.Packet) {
+callbackFn := func(cl *mqttsrv.Client, sub packets.Subscription, pk packets.Packet) {
     server.Log.Info("inline client received message from subscription", "client", cl.ID, "subscriptionId", sub.Identifier, "topic", pk.TopicName, "payload", string(pk.Payload))
 }
 server.Subscribe("direct/#", 1, callbackFn)
